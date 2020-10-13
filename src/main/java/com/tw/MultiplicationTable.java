@@ -10,10 +10,14 @@ public class MultiplicationTable {
     private String generateMultiplicationTable(int startNumber, int endNumber) {
         String[] multiplicationLines = new String[(endNumber - startNumber) + 1];
         for (int i = 0; i < multiplicationLines.length; i++) {
-            multiplicationLines[i] = generateMultiplicationExpression(startNumber, startNumber + i);
+            multiplicationLines[i] = generateMultiplicationLine(startNumber, startNumber + i);
         }
 
         return String.join("\n", multiplicationLines);
+    }
+
+    private String generateMultiplicationLine(int num1, int num2) {
+        return null;
     }
 
     private String generateMultiplicationExpression(int multiplicand, int multiplier) {
