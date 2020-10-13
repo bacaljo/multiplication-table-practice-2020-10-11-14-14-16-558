@@ -28,8 +28,8 @@ public class MultiplicationTable {
         return !isFirstNumberLarger && isFirstNumberWithinRange && isSecondNumberWithinRange;
     }
 
-    private boolean isNumberWithinRange(int startNumber, int lowerLimit, int upperLimit) {
-        return false;
+    private boolean isNumberWithinRange(int number, int lowerLimit, int upperLimit) {
+        return number >= lowerLimit && number <= upperLimit;
     }
 
     private boolean isFirstNumberLarger(int num1, int num2) {
