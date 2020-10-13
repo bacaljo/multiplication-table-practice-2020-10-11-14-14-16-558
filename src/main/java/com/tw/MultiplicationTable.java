@@ -26,7 +26,7 @@ public class MultiplicationTable {
     }
 
     private String generateMultiplicationExpression(int multiplicand, int multiplier) {
-        return null;
+        return multiplicand + "*" + multiplier + "=" + (multiplicand*multiplier);
     }
 
     private boolean validateInput(int startNumber, int endNumber) {
