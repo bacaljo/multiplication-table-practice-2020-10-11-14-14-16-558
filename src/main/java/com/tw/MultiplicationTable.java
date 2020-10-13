@@ -30,7 +30,7 @@ public class MultiplicationTable {
     }
 
     private boolean validateInput(int startNumber, int endNumber) {
-        boolean isFirstNumberLarger = isFirstNumberLarger(startNumber, endNumber);
+        boolean isFirstNumberLarger = isStartNumberLarger(startNumber, endNumber);
         boolean isFirstNumberWithinRange = isNumberWithinRange(startNumber, 1, 1000);
         boolean isSecondNumberWithinRange = isNumberWithinRange(endNumber, 1, 1000);
 
@@ -41,7 +41,7 @@ public class MultiplicationTable {
         return number >= lowerLimit && number <= upperLimit;
     }
 
-    private boolean isFirstNumberLarger(int num1, int num2) {
-        return num1 > num2;
+    private boolean isStartNumberLarger(int startNum, int endNum) {
+        return startNum > endNum;
     }
 }
