@@ -32,7 +32,7 @@ public class MultiplicationTable {
         return false;
     }
 
-    private boolean isFirstNumberLarger(int startNumber, int endNumber) {
-        return false;
+    private boolean isFirstNumberLarger(int num1, int num2) {
+        return num1 > num2;
     }
 }
