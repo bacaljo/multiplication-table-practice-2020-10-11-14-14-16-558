@@ -17,7 +17,12 @@ public class MultiplicationTable {
     }
 
     private String generateMultiplicationLine(int num1, int num2) {
-        return null;
+        String[] multiplicationExpressions = new String[num2 - num1];
+        for (int i = 0; i < multiplicationExpressions.length; i++) {
+            multiplicationExpressions[i] = generateMultiplicationExpression(num1, num2 + i);
+        }
+
+        return String.join("\n", multiplicationExpressions);
     }
 
     private String generateMultiplicationExpression(int multiplicand, int multiplier) {
