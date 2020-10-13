@@ -13,7 +13,7 @@ public class MultiplicationTable {
             multiplicationLines[i] = generateMultiplicationLine(startNumber, startNumber + i);
         }
 
-        return String.join("\n", multiplicationLines);
+        return String.join("\r\n", multiplicationLines);
     }
 
     private String generateMultiplicationLine(int num1, int num2) {
