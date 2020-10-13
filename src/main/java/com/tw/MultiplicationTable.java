@@ -30,9 +30,12 @@ public class MultiplicationTable {
     }
 
     private boolean validateInput(int startNumber, int endNumber) {
+        final int RANGE_LOWER_LIMIT = 1;
+        final int RANGE_UPPER_LIMIT = 1000;
+
         boolean isFirstNumberLarger = isStartNumberLarger(startNumber, endNumber);
-        boolean isFirstNumberWithinRange = isNumberWithinRange(startNumber, 1, 1000);
-        boolean isSecondNumberWithinRange = isNumberWithinRange(endNumber, 1, 1000);
+        boolean isFirstNumberWithinRange = isNumberWithinRange(startNumber, RANGE_LOWER_LIMIT, RANGE_UPPER_LIMIT);
+        boolean isSecondNumberWithinRange = isNumberWithinRange(endNumber, RANGE_LOWER_LIMIT, RANGE_UPPER_LIMIT);
 
         return !isFirstNumberLarger && isFirstNumberWithinRange && isSecondNumberWithinRange;
     }
